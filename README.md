@@ -1,4 +1,5 @@
-Example to reuse this component: 
+Example to reuse this component:
+
 ```jsx
 'use client';
 import Link from "next/link";
@@ -11,18 +12,18 @@ export default function Home() {
 
   return (
     <div className="bg-red-50  border-current text-blue w-[400px] aspect-[16/3] relative">
-      <Link href="/?showModal=y"> Modal Y</Link>
-      <Link href="/?showModal=dialog" className="underline">
-        Modal dialog
+      <Link href="/?showModal=modal1"> Modal1</Link>
+      <Link href="/?showModal=modal2" className="underline">
+        Modal2
       </Link>
-      <Dialog modalType="dialog">
-        <div className="w-96 bg-red-50 h-10">Dialog base</div>
+      <Dialog modalType="modal1">
+        <div className="w-96 bg-red-50 h-10">Modal1</div>
         <button onClick={onCloseModal}>Close</button>
       </Dialog>
-      <Dialog modalType="y">
-        <div className="w-full bg-red-50 h-10">Dialog Y</div>
+      <Dialog modalType="modal2">
+        <div className="w-full bg-red-50 h-10">Modal2</div>
       </Dialog>
     </div>
   );
 }
-</pre>
+```
