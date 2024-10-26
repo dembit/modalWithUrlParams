@@ -1,4 +1,5 @@
-Example to use this component: 
+Example to reuse this component: 
+```jsx
 'use client';
 import Link from "next/link";
 import Dialog from "./components/Dialog";
@@ -24,3 +25,4 @@ export default function Home() {
     </div>
   );
 }
+</pre>
