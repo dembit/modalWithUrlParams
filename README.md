@@ -11,9 +11,9 @@ export default function Home() {
 
   return (
     <div className="bg-red-50  border-current text-blue w-[400px] aspect-[16/3] relative">
-      <Link href="/?showModal=y"> Go With Modal</Link>
+      <Link href="/?showModal=y"> Modal Y</Link>
       <Link href="/?showModal=dialog" className="underline">
-        Go to Without Modal
+        Modal dialog
       </Link>
       <Dialog modalType="dialog">
         <div className="w-96 bg-red-50 h-10">Dialog base</div>
